@@ -1,0 +1,48 @@
+{
+    "target": "Churn",
+    "features": [
+        "AccountWeeks",
+        "ContractRenewal",
+        "DataPlan",
+        "DataUsage",
+        "CustServCalls",
+        "DayMins",
+        "DayCalls",
+        "MonthlyCharge",
+        "OverageFee",
+        "RoamMins",
+        "datausage_x_contract",
+        "datausage_x_plan",
+        "custserv_per_week",
+        "mins_per_call",
+        "charge_per_min",
+        "total_usage",
+        "cost_intensity",
+        "overage_per_min",
+        "high_custserv_calls",
+        "high_overage",
+        "high_roaming"
+    ],
+    "final_cv_auc": 0.8919592459409393,
+    "fold_scores": [
+        0.917381081569904,
+        0.9118466268764696,
+        0.9160969433894013,
+        0.8869883040935672,
+        0.8902320906432748
+    ],
+    "params": {
+        "objective": "binary",
+        "metric": "auc",
+        "boosting_type": "gbdt",
+        "learning_rate": 0.0635534357133,
+        "num_leaves": 58,
+        "max_depth": 5,
+        "feature_fraction": 0.9079883802664838,
+        "bagging_fraction": 0.6598623439714022,
+        "bagging_freq": 5,
+        "verbosity": -1,
+        "seed": 1717,
+        "scale_pos_weight": 5.900621118012422
+    }
+}
